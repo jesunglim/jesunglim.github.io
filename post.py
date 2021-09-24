@@ -39,8 +39,11 @@ for i in files:
         title = json_data["title"]
         text = json_data["text"]
         
+        text_prev = str(text.split("<img")[0])
+        text_prev = text_prev[0:50]
+        
         link = i.split('.')[0]
-        html_list += "<a href= \"post_view/" + link + ".html\" style=\"text-decoration:none\">" + "<p>"+ date + " / " + category + "</p> <h1>" + title + "</h1> <p>" + text[0:50] + "</p> </a><br>"
+        html_list += "<a href= \"post_view/" + link + ".html\" style=\"text-decoration:none\">" + "<p>"+ date + " / " + category + "</p> <h1>" + title + "</h1> <p>" + text_prev + "</p> </a><br>"
 
         html_post = "           <h1>" + title + "</h1> <p>" + date + " / category : " + category + "</p><hr><br><br> <p>" + text + "</p>"  
         html_path = "post_view/" + link + ".html"
