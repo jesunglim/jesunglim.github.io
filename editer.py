@@ -1,14 +1,15 @@
-date = "2021.9.23"
+date = "2021.9.24"
 
 category = "note"
 
-title = "블로그 엔진 제작"
+title = "이미지 업로드 테스트"
 
 
 # 띄어쓰기엔 <br>
 text = '''
-매번 블로그에 글을 작성할 때 마다 html 수정 작업을 거치면<br>
-너무 귀찮고 결국엔 블로그 포스팅을 안하게 될 것 같아 편한 방법을 생각해봤다.<br>
-결국 포스팅을 할때마다 자동으로 사이트를 데이터에 맞게 업데이트 해주는 엔진을 개발해냈다.<br>
-이제 앞으론 editer.py에 글을 쓰고, 콘솔로 엔진을 실행만 하고 깃헙에 푸시만 해주면 끝이다.
+도지는 귀엽지<br>
+<img src="..\images/doge.jpg" alt="">
 '''
+
+
+# image example <img src="..\images/200x200.png" alt="My Image">
